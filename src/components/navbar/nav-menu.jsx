@@ -5,6 +5,8 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
+import { Button } from "../ui/button";
+import { ModeToggle } from "../theme/button";
 
 export const NavMenu = (props) => (
   <NavigationMenu {...props}>
@@ -45,6 +47,10 @@ export const NavMenu = (props) => (
           <Link href="#">Contato</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
+      <div className="flex flex-col md:hidden items-center gap-3">
+            <Button>Curriculo</Button>
+            <ModeToggle/>
+            </div>
     </NavigationMenuList>
   </NavigationMenu>
 );
