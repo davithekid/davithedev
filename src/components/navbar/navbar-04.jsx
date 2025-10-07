@@ -16,6 +16,7 @@ const Navbar04Page = () => {
           <NavMenu className="hidden md:block" />
 
           <div className="flex items-center gap-3">
+            <Button>Curriculo</Button>
             <ModeToggle />
 
             {/* Mobile Menu */}

@@ -22,7 +22,15 @@ const footerLinks = [
     href: "#",
   },
   {
-    title: "TimeLine",
+    title: "Projetos",
+    href: "#",
+  },
+  {
+    title: "Certificados",
+    href: "#",
+  },
+  {
+    title: "Timeline",
     href: "#",
   },
   {

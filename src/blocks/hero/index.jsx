@@ -78,7 +78,7 @@ export default function Hero() {
                 onClick={() => scrollToSection("technologies")}
                 className="border-violet-700 hover:bg-violet-500/10 rounded-full px-8 py-6 text-base font-mono shadow-none"
               >
-                <CirclePlay className="h-5 w-5 mr-2" /> Techs
+                <CirclePlay className="h-5 w-5 mr-2" /> Baixar CV
               </Button>
             </motion.div>
 
