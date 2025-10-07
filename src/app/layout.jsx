@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Davithdev",
+  title: "davi, the dev",
   description: "Portfolio pessoal",
 };
 
