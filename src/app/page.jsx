@@ -1,3 +1,4 @@
+import { Certificates } from "@/blocks/certificates";
 import Contact02Page from "@/blocks/contact";
 import { Feature16 } from "@/blocks/features";
 import Footer05Page from "@/blocks/footer/footer";
@@ -31,6 +32,10 @@ export default function Home() {
 
       <section className="mx-auto container">
         <Feature72 />
+      </section>
+
+      <section className="mx-auto container">
+        <Certificates />
       </section>
 
       <section className="mx-auto container">
