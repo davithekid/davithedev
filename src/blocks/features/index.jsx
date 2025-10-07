@@ -35,7 +35,7 @@ const Feature16 = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="rounded-2xl bg-accent p-8 transition-all hover:shadow-lg hover:-translate-y-1"
+              className="rounded-2xl bg-accent p-8 transition-all hover:shadow-lg hover:-translate-y-1 mx-3  lg:mx-0"
             >
               <span className="mb-6 flex size-14 items-center justify-center rounded-full bg-background shadow-inner">
                 {feature.icon}

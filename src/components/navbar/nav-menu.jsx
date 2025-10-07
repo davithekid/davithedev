@@ -14,37 +14,37 @@ export const NavMenu = (props) => (
       className="gap-3 space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#">Inicio</Link>
+          <Link href="#principal">Inicio</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#">Tecnologias</Link>
+          <Link href="#tech">Tecnologias</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#">Serviços</Link>
+          <Link href="#servicos">Serviços</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#">Projetos</Link>
+          <Link href="#projetos">Projetos</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#">Certificados</Link>
+          <Link href="#certificados">Certificados</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#">TimeLine</Link>
+          <Link href="#timeline">TimeLine</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#">Contato</Link>
+          <Link href="#contato">Contato</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <div className="flex flex-col md:hidden items-center gap-3">

@@ -18,32 +18,32 @@ export default function Home() {
         </header>
       </nav>
 
-      <section className="mx-auto">
+      <section id="principal" className="mx-auto">
         <Hero07 />
       </section>
 
-      <section className="mx-auto container">
+      <section id="tech" className="mx-auto container">
         <Techs />
       </section>
 
-      <section className="mx-auto  bg-violet-50 dark:bg-zinc-900">
+      <section id="servicos" className="mx-auto  bg-violet-50 dark:bg-zinc-900">
         <Feature16 />
       </section>
 
-      <section className="mx-auto container">
+      <section  id="projetos" className="mx-auto container">
         <Feature72 />
       </section>
 
-      <section className="mx-auto container">
+      <section id="certificados" className="mx-auto container">
         <Certificates />
       </section>
 
-      <section className="mx-auto container">
+      <section id="timeline" className="mx-auto container">
         <Timeline />
       </section>
 
 
-      <section className="mx-auto container">
+      <section id="contato" className="mx-auto container">
         <Contact02Page />
       </section>
 

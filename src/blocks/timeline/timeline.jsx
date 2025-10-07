@@ -1,24 +1,24 @@
 import { Badge } from "@/components/ui/badge";
 import { Building2, Calendar } from "lucide-react";
 
+
 const experiences = [
   {
-    title: "Student System Development",
+    title: "Estudante de Desenvolvimento de Sistemas",
     company: "SENAI Armando de Arruda Pereira",
-    period: "2024 - Present",
+    period: "2024 - Presente",
     description:
-      "Led the development of enterprise-scale web applications, mentored junior developers, and implemented best practices for code quality and performance optimization.",
-    technologies: ["JavaScript", "Node.js", "PHP", "Next.js", "MySQL", 'Virtual Machine'],
+      "Atualmente estudando desenvolvimento de sistemas, com foco em Node.js, aprendendo sobre lógica de programação, banco de dados, e desenvolvimento web moderno.",
+    technologies: ["JavaScript", "Node.js", "PHP", "Next.js", "MySQL"],
   },
   {
-    title: "Help Desk",
+    title: "Estagiário de TI",
     company: "Grupo Braido",
-    period: "2025-2025",
+    period: "2025 - 2025",
     description:
-      "Led the development of enterprise-scale web applications, mentored junior developers, and implemented best practices for code quality and performance optimization.",
-    technologies: ["Prometheus", "SASS", "Infra"],
+      "Atuação com tarefas básicas de suporte técnico e infraestrutura, aprendendo sobre servidores, sistemas SaaS, e monitoramento de ambiente de TI.",
+    technologies: ["Prometheus", "SaaS", "Infraestrutura", "Servidores"],
   },
-
 ];
 
 export default function Timeline() {

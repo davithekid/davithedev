@@ -47,7 +47,7 @@ const Footer05Page = () => {
         <div className="max-w-(--breakpoint-xl) mx-auto">
           <div className="py-12 flex flex-col justify-start items-center">
             <Logo />
-            <ul className="mt-6 flex items-center gap-4 flex-wrap">
+            <ul className="mt-6 flex items-center gap-4 flex-wrap mx-2  lg:mx-0">
               {footerLinks.map(({ title, href }) => (
                 <li key={title}>
                   <Link href={href} className="text-muted-foreground hover:text-foreground">

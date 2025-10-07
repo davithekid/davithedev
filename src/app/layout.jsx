@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br" suppressHydrationWarning>
+    <html lang="pt-br" className="scroll-smooth" suppressHydrationWarning>
       <body>
         <ThemeProvider
           attribute="class"

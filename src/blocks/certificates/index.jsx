@@ -40,7 +40,7 @@ const Certificates = ({
                     {features.map((feature) => (
                         <div
                             key={feature.id}
-                            className="border-border flex flex-col overflow-clip rounded-xl border"
+                            className="border-border flex flex-col overflow-clip rounded-xl border mx-3  lg:mx-0"
                         >
                             <div>
                                 <img
