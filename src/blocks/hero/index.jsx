@@ -89,7 +89,7 @@ export default function Hero() {
               className="flex gap-4 justify-center pt-4"
             >
               <a
-                href="https://github.com"
+                href="https://github.com/davithekid"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-violet-500/20 hover:bg-violet-500/30 border border-violet-500/30 flex items-center justify-center transition-all"
@@ -97,7 +97,7 @@ export default function Hero() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/chagas-davi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-violet-500/20 hover:bg-violet-500/30 border border-violet-500/30 flex items-center justify-center transition-all"
