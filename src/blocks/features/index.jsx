@@ -4,35 +4,33 @@ const Feature16 = () => {
   const features = [
     {
       icon: <Timer className="size-6" />,
-      title: "Performance",
+      title: "Desempenho",
       description:
-        "Código otimizado, APIs rápidas e sistemas que priorizam eficiência, escalabilidade e tempo de resposta.",
+        "Busco sempre escrever código limpo e eficiente, pensando em respostas rápidas e uma boa experiência para o usuário.",
     },
     {
       icon: <ZoomIn className="size-6" />,
-      title: "Qualidade",
+      title: "Boas Práticas",
       description:
-        "Arquiteturas limpas, boas práticas e testes que garantem estabilidade e manutenção a longo prazo.",
+        "Valorizo organização, padrões e clareza no código — criando bases sólidas para crescer e manter projetos com qualidade.",
     },
     {
       icon: <Zap className="size-6" />,
-      title: "Inovação",
+      title: "Aprendizado Contínuo",
       description:
-        "Exploro novas tecnologias e abordagens para entregar soluções modernas e impactantes.",
+        "Gosto de explorar novas tecnologias e entender como posso aplicá-las de forma prática em projetos reais.",
     },
   ];
 
   return (
-    <section className="py-32">
+    <section className="py-6">
       <div className="container">
-        {/* Título */}
         <h2 className="text-3xl font-semibold tracking-tight md:text-4xl text-center">
           <span className="text-muted-foreground">&lt;</span>
           <span className="text-primary">O que eu entrego?</span>
           <span className="text-muted-foreground">&gt;</span>
         </h2>
 
-        {/* Grid de features */}
         <div className="mt-14 grid gap-6 lg:mt-20 lg:grid-cols-3">
           {features.map((feature, index) => (
             <div

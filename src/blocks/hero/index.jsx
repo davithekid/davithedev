@@ -56,13 +56,9 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl md:text-2xl text-gray-400 leading-relaxed max-w-3xl mx-auto font-mono"
             >
-              {"{ "}building APIs with <span className="text-violet-400">Node.js</span>,
-              exploring <span className="text-violet-400">infra</span> and <span className="text-violet-400">cloud</span>,
-              always learning. {"}"}
+              {"{ "}construindo APIs com <span className="text-violet-400">Node.js</span>,
+              explorando <span className="text-violet-400">infraestrutura</span> e <span className="text-violet-400">cloud.</span> {"}"}
             </motion.p>
-
-
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

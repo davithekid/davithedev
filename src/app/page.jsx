@@ -2,7 +2,7 @@ import Contact02Page from "@/blocks/contact";
 import { Feature16 } from "@/blocks/features";
 import Footer05Page from "@/blocks/footer/footer";
 import Hero07 from "@/blocks/hero";
-import { Feature73 } from "@/blocks/projects";
+import { Feature72 } from "@/blocks/projects";
 import { Techs } from "@/blocks/techs";
 import Timeline from "@/blocks/timeline/timeline";
 import Navbar04Page from "@/components/navbar/navbar-04";
@@ -30,7 +30,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto container">
-        <Feature73 />
+        <Feature72 />
       </section>
 
       <section className="mx-auto container">

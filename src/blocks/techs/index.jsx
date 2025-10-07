@@ -3,36 +3,36 @@
 import { Code, Cog, PenTool, ServerCog } from "lucide-react";
 
 const Techs = () => {
-    const services = [
-        {
-            icon: <Cog className="h-6 w-6" />,
-            title: "Back-End Engineering",
-            description:
-                "Robust APIs and scalable architectures built with modern frameworks and clean code principles.",
-            items: ["Node.js (Fastify / Express)", "Sequelize ORM", "Spring Boot"],
-        },
-        {
-            icon: <PenTool className="h-6 w-6" />,
-            title: "Front-End Development",
-            description:
-                "Clean, responsive, and accessible interfaces using modern component-based design systems.",
-            items: ["Next.js", "TailwindCSS", "Shadcn/UI"],
-        },
-        {
-            icon: <Code className="h-6 w-6" />,
-            title: "Full Stack Integration",
-            description:
-                "Seamless connection between front and back, integrating APIs, authentication and optimized performance.",
-            items: ["RESTful APIs", "JWT Auth", "React Hooks"],
-        },
-        {
-            icon: <ServerCog className="h-6 w-6" />,
-            title: "DevOps & Infrastructure",
-            description:
-                "Automation, deployment and scalability with modern tooling and best practices.",
-            items: ["Docker", "Linux", "AWS (EC2)", "Git "],
-        },
-    ];
+   const services = [
+  {
+    icon: <Cog className="h-6 w-6" />,
+    title: "Back-End",
+    description:
+      "Desenvolvo APIs e estruturas escaláveis com Node.js, buscando código limpo e boas práticas, ainda aprendendo e evoluindo a cada projeto.",
+    items: ["Node.js (Fastify / Express)", "Sequelize ORM", "Spring Boot"],
+  },
+  {
+    icon: <PenTool className="h-6 w-6" />,
+    title: "Front-End",
+    description:
+      "Crio interfaces limpas, responsivas e funcionais usando sistemas modernos de componentes, sempre com atenção à experiência do usuário.",
+    items: ["Next.js", "TailwindCSS", "Shadcn/UI"],
+  },
+  {
+    icon: <Code className="h-6 w-6" />,
+    title: "Integração Full Stack",
+    description:
+      "Conecto front e back de forma prática, integrando APIs, autenticação e buscando desempenho eficiente em cada projeto.",
+    items: ["APIs RESTful", "JWT Auth", "React Hooks"],
+  },
+  {
+    icon: <ServerCog className="h-6 w-6" />,
+    title: "DevOps & Infraestrutura",
+    description:
+      "Aprendendo a automatizar, implantar e escalar sistemas usando ferramentas modernas, sempre em evolução.",
+    items: ["Docker", "Linux", "AWS (EC2)", "Git"],
+  },
+];
 
     return (
         <section className="py-32">
@@ -41,7 +41,7 @@ const Techs = () => {
                     <div className="space-y-4 text-center">
                         <h2 className="text-3xl font-semibold tracking-tight md:text-4xl text-center">
                             <span className="text-muted-foreground">&lt;</span>
-                            <span className="text-primary">My Tech Stack</span>
+                            <span className="text-primary">Minha Stack</span>
                             <span className="text-muted-foreground">&gt;</span>
                         </h2>
     

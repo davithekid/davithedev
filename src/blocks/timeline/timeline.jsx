@@ -26,21 +26,18 @@ export default function Timeline() {
     <div className="max-w-(--breakpoint-sm) mx-auto py-12 md:py-20 px-6">
       <h2 className="text-3xl font-semibold tracking-tight md:text-4xl text-center py-8">
         <span className="text-muted-foreground">&lt;</span>
-        <span className="text-primary">My TimeLine</span>
+        <span className="text-primary">TimeLine</span>
         <span className="text-muted-foreground">&gt;</span>
       </h2>
 
       <div className="relative ml-3">
-        {/* Timeline line */}
         <div className="absolute left-0 top-4 bottom-0 border-l-2" />
 
         {experiences.map(({ company, description, period, technologies, title }, index) => (
           <div key={index} className="relative pl-8 pb-12 last:pb-0">
-            {/* Timeline dot */}
             <div
               className="absolute h-3 w-3 -translate-x-1/2 left-px top-3 rounded-full border-2 border-primary bg-background ring-8 ring-background" />
 
-            {/* Content */}
             <div className="space-y-3">
               <div className="flex items-center gap-2.5">
                 <div
