@@ -3,31 +3,37 @@ const Feature72 = ({
     heading = "Meus Projetos",
     features = [
         {
-            id: "feature-1",
+            id: 1,
             title: "Barbearia Croods",
             description:
-                "Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.",
+                "Sistema de agendamento para uma barbearia real.",
             image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
         },
         {
-            id: "feature-2",
+            id: 2,
             title: "Zelos",
             description:
-                "Fully responsive design that works seamlessly across all devices and screen sizes. Perfect for any platform.",
+                "Sistema de chamados feito para a escola SENAI Armando Arruda Pereira",
             image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
         },
         {
-            id: "feature-3",
+            id: 3,
             title: "Aqua",
             description:
-                "Simple integration process with comprehensive documentation and dedicated support team.",
+                "Sistema de Gestão do consumo de água.",
             image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
         },
         {
-            id: "feature-4",
+            id: 4,
             title: "V-MAP",
             description:
-                "Powerful analytics tools to help you understand your users and make data-driven decisions.",
+                "Sistema de Gestão de Transporte Escolar",
+            image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+        }, {
+            id: 5,
+            title: "Library API",
+            description:
+                "API simples cujo foco foi o deply na AWS",
             image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
         },
     ],

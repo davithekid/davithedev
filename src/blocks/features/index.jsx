@@ -23,7 +23,7 @@ const Feature16 = () => {
   ];
 
   return (
-    <section className="py-6">
+    <section className="py-6 flex justify-center">
       <div className="container">
         <h2 className="text-3xl font-semibold tracking-tight md:text-4xl text-center">
           <span className="text-muted-foreground">&lt;</span>

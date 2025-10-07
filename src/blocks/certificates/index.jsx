@@ -3,27 +3,27 @@ const Certificates = ({
     heading = "Meus Certificados",
     features = [
         {
-            id: "1",
+            id: 1,
             title: "Fundamentos Linguagem de Programação C#",
             description:
                 "SENAI Paulo Antonio Skaf",
-            image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+            image: "https://imgs.search.brave.com/gYmIdgu_2LdeBoOuFhRW0hTLXwEBlT6kTtLX-DLz2ok/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL3N0YXIt/bGFiL25vdm8tc2l0/ZS9mb3JtYWNvZXMv/Y3NoYXJwL2Zvci13/aG8vZm9yLXdoby1j/c2hhcnAucG5n",
         },
         {
-            id: "2",
+            id: 2,
             title: "Fundamentos Python",
             description:
                 "Fundação Bradesco",
-            image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+            image: "https://imgs.search.brave.com/H41DUKTjQ2jfrzvhqRnycaaGDYymBdBylOWOtLaDEbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9QeXRob25f/KHByb2dyYW1taW5n/X2xhbmd1YWdlKS9Q/eXRob25fKHByb2dy/YW1taW5nX2xhbmd1/YWdlKS1Mb2dvLndp/bmUuc3Zn",
         },
         {
-            id: "3",
-            title: "Orientação a Objetos Java",
+            id: 3,
+            title: "CCNA V7: INTRODUCTION TO NETWORKS",
             description:
-                "Fundação Bradesco",
-            image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+                "Cisco",
+            image: "https://imgs.search.brave.com/5Qf2F6aYSaQy95qFFLWrTTRuyNmrcwgPjceJ2dX8K-8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE0/LzA0L2Npc2NvLWxv/Z28tMC5wbmc    ",
         },
-    
+
     ],
 }) => {
     return (

@@ -51,10 +51,10 @@ const Techs = () => {
                         {services.map((service, index) => (
                             <div
                                 key={index}
-                                className="border-border space-y-6 rounded-2xl border p-8 transition-all hover:shadow-lg hover:-translate-y-1"
+                                className="border-primary/50     space-y-6 rounded-2xl border p-8 transition-all hover:shadow-lg hover:-translate-y-1"
                             >
                                 <div className="flex items-center gap-4">
-                                    <div className="bg-muted rounded-full p-3">{service.icon}</div>
+                                    <div className="bg-muted rounded-full p-3 text-primary">{service.icon}</div>
                                     <h3 className="text-xl font-semibold">{service.title}</h3>
                                 </div>
                                 <p className="text-muted-foreground leading-relaxed">

@@ -18,7 +18,7 @@ export default function Home() {
         </header>
       </nav>
 
-      <section className="mx-auto container">
+      <section className="mx-auto">
         <Hero07 />
       </section>
 
@@ -26,7 +26,7 @@ export default function Home() {
         <Techs />
       </section>
 
-      <section className="mx-auto container bg-violet-50 dark:bg-zinc-900">
+      <section className="mx-auto  bg-violet-50 dark:bg-zinc-900">
         <Feature16 />
       </section>
 
