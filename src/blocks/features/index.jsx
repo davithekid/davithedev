@@ -37,13 +37,13 @@ const Feature16 = () => {
               key={index}
               className="rounded-2xl bg-accent p-8 transition-all hover:shadow-lg hover:-translate-y-1 mx-3  lg:mx-0"
             >
-              <span className="mb-6 flex size-14 items-center justify-center rounded-full bg-background shadow-inner">
+              <span className="mb-6 flex size-14 items-center text-primary justify-center m-auto rounded-full bg-background shadow-inner">
                 {feature.icon}
               </span>
-              <h3 className="mb-2 text-xl font-semibold text-foreground">
+              <h3 className="mb-2 text-xl font-semibold text-foreground text-center">
                 {feature.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-center">
                 {feature.description}
               </p>
             </div>

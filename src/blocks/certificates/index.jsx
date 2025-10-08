@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { CalendarDays } from "lucide-react";
 const Certificates = ({
     heading = "Meus Certificados",
     features = [
@@ -7,21 +7,24 @@ const Certificates = ({
             title: "Fundamentos Linguagem de Programação C#",
             description:
                 "SENAI Paulo Antonio Skaf",
-            image: "https://imgs.search.brave.com/gYmIdgu_2LdeBoOuFhRW0hTLXwEBlT6kTtLX-DLz2ok/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL3N0YXIt/bGFiL25vdm8tc2l0/ZS9mb3JtYWNvZXMv/Y3NoYXJwL2Zvci13/aG8vZm9yLXdoby1j/c2hhcnAucG5n",
+            image: "https://storage.googleapis.com/star-lab/blog/OGs/CSharp.png",
+            date: '29/09/2022'
         },
         {
             id: 2,
-            title: "Fundamentos Python",
+            title: "Linguagem de Programação Python Básico",
             description:
                 "Fundação Bradesco",
             image: "https://imgs.search.brave.com/H41DUKTjQ2jfrzvhqRnycaaGDYymBdBylOWOtLaDEbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9QeXRob25f/KHByb2dyYW1taW5n/X2xhbmd1YWdlKS9Q/eXRob25fKHByb2dy/YW1taW5nX2xhbmd1/YWdlKS1Mb2dvLndp/bmUuc3Zn",
+            date: '20/09/2024'
         },
         {
             id: 3,
             title: "CCNA V7: INTRODUCTION TO NETWORKS",
             description:
                 "Cisco",
-            image: "https://imgs.search.brave.com/5Qf2F6aYSaQy95qFFLWrTTRuyNmrcwgPjceJ2dX8K-8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE0/LzA0L2Npc2NvLWxv/Z28tMC5wbmc    ",
+            image: "https://imgs.search.brave.com/5Qf2F6aYSaQy95qFFLWrTTRuyNmrcwgPjceJ2dX8K-8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE0/LzA0L2Npc2NvLWxv/Z28tMC5wbmc",
+            date: '10/12/2024'
         },
 
     ],
@@ -40,7 +43,7 @@ const Certificates = ({
                     {features.map((feature) => (
                         <div
                             key={feature.id}
-                            className="border-border flex flex-col overflow-clip rounded-xl border mx-3  lg:mx-0"
+                            className="border-border flex flex-col overflow-clip rounded-xl border mx-3 lg:mx-0 hover:scale-102 duration-200 hover:border-primary"
                         >
                             <div>
                                 <img
@@ -53,9 +56,18 @@ const Certificates = ({
                                 <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-2xl lg:mb-6">
                                     {feature.title}
                                 </h3>
-                                <p className="text-muted-foreground lg:text-lg">
-                                    {feature.description}
-                                </p>
+                                <div className="flex justify-between">
+
+                                    <p className="text-muted-foreground lg:text-lg">
+                                        {feature.description}
+                                    </p>
+                                    <p className="text-muted-foreground lg:text-lg">
+                                        <div className="flex gap-1 items-center">
+                                        <CalendarDays size={18} className="text-primary" />
+                                        {feature.date}
+                                        </div>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     ))}
