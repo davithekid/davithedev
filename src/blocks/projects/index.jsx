@@ -67,7 +67,7 @@ const Feature72 = ({
             dialog:
                 "API de gerenciamento de livros, explorando boas práticas de backend e infraestrutura com Docker.",
             image:
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+                "https://emaster.cloud/wp-content/uploads/sites/10/2023/07/amazon-ec2-aa.jpg",
             link: "https://github.com/davithekid/library-api",
             tech: ["Fastify", "Sequelize", "Docker", "AWS EC2"],
         },
@@ -109,7 +109,7 @@ const Feature72 = ({
                                 <AlertDialogHeader>
                                     <AlertDialogTitle>{feature.title}</AlertDialogTitle>
                                     <AlertDialogDescription>
-                                        {feature.dialog} 
+                                        {feature.dialog}
                                     </AlertDialogDescription>
                                 </AlertDialogHeader>
                                 <div className="mt-4 flex flex-wrap gap-2">
