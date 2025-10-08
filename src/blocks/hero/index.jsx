@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, ArrowDown, ArrowUpRight, CirclePlay } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedGridPattern from "../../components/ui/animated-grid-pattern";
+import Link from "next/link";
 
 export default function Hero() {
   const scrollToSection = (id) => {
@@ -67,18 +68,24 @@ export default function Hero() {
             >
               <Button
                 size="lg"
+                asChild
                 onClick={() => scrollToSection("projects")}
                 className="bg-violet-600 hover:bg-violet-700 text-white rounded-full px-8 py-6 text-base font-mono"
               >
-                Projetos <ArrowUpRight className="h-5 w-5 ml-1" />
+                <Link href='#projetos'>
+                  Projetos <ArrowUpRight className="h-5 w-5 ml-1" />
+                </Link>
               </Button>
               <Button
                 variant="outline"
                 size="lg"
+                asChild
                 onClick={() => scrollToSection("technologies")}
                 className="border-violet-700 hover:bg-violet-500/10 rounded-full px-8 py-6 text-base font-mono shadow-none"
               >
-                <CirclePlay className="h-5 w-5 mr-2" /> Baixar CV
+                <Link href='#contato'>
+                  <CirclePlay className="h-5 w-5 mr-2" /> Contato
+                </Link>
               </Button>
             </motion.div>
 

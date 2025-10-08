@@ -43,30 +43,28 @@ const Certificates = ({
                     {features.map((feature) => (
                         <div
                             key={feature.id}
-                            className="border-border flex flex-col overflow-clip rounded-xl border mx-3 lg:mx-0 hover:scale-102 duration-200 hover:border-primary"
+                            className="border-border flex flex-col overflow-hidden rounded-xl border mx-3 lg:mx-0 hover:scale-105 transition-transform duration-200 hover:border-primary"
                         >
-                            <div>
-                                <img
-                                    src={feature.image}
-                                    alt={feature.title}
-                                    className="aspect-16/9 h-full w-full object-cover object-center"
-                                />
-                            </div>
+                            <img
+                                src={feature.image}
+                                alt={feature.title}
+                                className="aspect-16/9 h-full w-full object-cover object-center"
+                            />
+
                             <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12">
                                 <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-2xl lg:mb-6">
                                     {feature.title}
                                 </h3>
-                                <div className="flex justify-between">
 
+                                <div className="flex justify-between items-center">
                                     <p className="text-muted-foreground lg:text-lg">
                                         {feature.description}
                                     </p>
-                                    <p className="text-muted-foreground lg:text-lg">
-                                        <div className="flex gap-1 items-center">
+
+                                    <div className="flex items-center gap-2 text-muted-foreground lg:text-lg">
                                         <CalendarDays size={18} className="text-primary" />
-                                        {feature.date}
-                                        </div>
-                                    </p>
+                                        <span>{feature.date}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
