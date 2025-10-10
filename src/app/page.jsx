@@ -7,7 +7,6 @@ import { Feature72 } from "@/blocks/projects";
 import { Techs } from "@/blocks/techs";
 import Timeline from "@/blocks/timeline/timeline";
 import Navbar04Page from "@/components/navbar/navbar-04";
-import Image from "next/image";
 
 export default function Home() {
   return (
