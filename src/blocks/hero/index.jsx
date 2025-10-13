@@ -38,7 +38,7 @@ export default function Hero() {
               className="inline-block"
             >
               <span className="px-4 py-2 bg-violet-500/20 border border-violet-500/30 rounded-full text-violet-400 text-sm font-medium font-mono">
-                &lt;Desenvolvedor Back-end /&gt;
+                &lt;Desenvolvedor de Software /&gt;
               </span>
             </motion.div>
 
@@ -57,7 +57,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl md:text-2xl text-gray-400 leading-relaxed max-w-3xl mx-auto font-mono"
             >
-              {"{ "}construindo APIs com <span className="text-violet-400">Node.js</span>,
+              {"{ "}Construindo APIs com <span className="text-violet-400">Node.js</span>,
               explorando <span className="text-violet-400">infraestrutura</span> e <span className="text-violet-400">cloud.</span> {"}"}
             </motion.p>
             <motion.div
