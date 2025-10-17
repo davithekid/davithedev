@@ -34,7 +34,7 @@ const Feature72 = ({
             dialog:
                 "Plataforma integrada ao Active Directory, construída com Express e Sequelize, utilizando Docker para padronização do ambiente.",
             image:
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+                "./zelos.png",
             link: "https://github.com/davithekid/zelos",
             tech: ["Next.Js", "Express", "Sequelize", "Docker", "Active Directory"],
         },
@@ -45,7 +45,7 @@ const Feature72 = ({
             dialog:
                 "Aplicação hospedada na AWS EC2, com backend em Fastify e dashboards analíticos para visualização de dados.",
             image:
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+                "./aqua.png",
             link: "https://github.com/davithekid/aqua",
             tech: ["Next.Js", "Fastify", "Sequelize", "Docker", "Shadcn UI", "AWS EC2"],
         },
@@ -56,7 +56,7 @@ const Feature72 = ({
             dialog:
                 "Gerencia rotas, motoristas e veículos, priorizando simplicidade e performance com Express e Knex.",
             image:
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+                "./v-map.png",
             link: "https://github.com/davithekid/v-map",
             tech: ["Next.Js", "Express", "Knex"],
         },
