@@ -17,12 +17,19 @@ const Navbar04Page = () => {
 
           <div className="flex items-center gap-3">
             <div className="hidden md:flex items-center gap-3">
-            <Button>Curriculo</Button>
-            <ModeToggle />
+              <a
+                href="./curriculo.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                <Button className={'cursor-pointer'}>Baixar Currículo</Button>
+              </a>
+              <ModeToggle />
             </div>
-            
-
-            {/* Mobile Menu */}
+           
+              {/* Mobile Menu */}
             <div className="md:hidden">
               <NavigationSheet />
             </div>
