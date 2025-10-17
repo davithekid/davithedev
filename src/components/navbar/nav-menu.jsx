@@ -48,7 +48,18 @@ export const NavMenu = (props) => (
           <Link href="#contato">Contato</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
+      <div className="lg:hidden">
 
+<a
+                href="./curriculo.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+                >
+                <Button className={'cursor-pointer'}>Baixar Currículo</Button>
+              </a>
+                </div>
     
     </NavigationMenuList>
   </NavigationMenu>
