@@ -39,7 +39,7 @@ const Certificates = ({
                         <span className="text-muted-foreground">&gt;</span>
                     </h2>
                 </div>
-                <div className="grid gap-6 md:grid-cols-3 lg:gap-8">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                     {features.map((feature) => (
                         <div
                             key={feature.id}
