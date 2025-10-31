@@ -13,10 +13,10 @@ const Navbar04Page = () => {
           <Logo />
 
           {/* Desktop Menu */}
-          <NavMenu className="hidden md:block" />
+          <NavMenu className="hidden lg:block" />
 
           <div className="flex items-center gap-3">
-            <div className="hidden md:flex items-center gap-3">
+            <div className="hidden lg:flex items-center gap-3">
               <a
                 href="./curriculo.pdf"
                 download
@@ -30,7 +30,7 @@ const Navbar04Page = () => {
             </div>
            
               {/* Mobile Menu */}
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <NavigationSheet />
             </div>
           </div>

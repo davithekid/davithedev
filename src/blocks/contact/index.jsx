@@ -7,9 +7,9 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { MailIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";
+import { toast } from "sonner";
 
 const Contact02Page = () => {
-  const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -23,19 +23,24 @@ const Contact02Page = () => {
       message: e.target.message.value,
     };
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    if (res.ok) {
-      setStatus("Mensagem enviada com sucesso!");
-      e.target.reset();
-    } else {
-      setStatus("Erro ao enviar a mensagem. Tente novamente.");
+      if (res.ok) {
+        toast.success("Mensagem enviada com sucesso!");
+        e.target.reset();
+      } else {
+        toast.error("Erro ao enviar a mensagem. Tente novamente.");
+      }
+    } catch (err) {
+      toast.error("Falha de conexão com o servidor.");
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   return (
@@ -51,7 +56,6 @@ const Contact02Page = () => {
         </p>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contato info */}
           <div className="flex flex-col gap-8 lg:py-30">
             <div className="flex items-center gap-4">
               <div className="flex items-center justify-center w-12 h-12 bg-primary/10 text-primary rounded-full">
@@ -78,7 +82,6 @@ const Contact02Page = () => {
             </div>
           </div>
 
-          {/* Formulário */}
           <Card className="bg-accent rounded-2xl shadow-md">
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="flex flex-col gap-6">
@@ -106,7 +109,6 @@ const Contact02Page = () => {
                 <Button type="submit" className="mt-4 w-full" size="lg" disabled={loading}>
                   {loading ? "Enviando..." : "Enviar"}
                 </Button>
-                {status && <p className="text-sm mt-2">{status}</p>}
               </form>
             </CardContent>
           </Card>

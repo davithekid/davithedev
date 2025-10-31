@@ -7,14 +7,18 @@ export async function POST(req) {
     const { firstName, lastName, email, message } = await req.json();
 
     await resend.emails.send({
-      from: "Contato Portfólio <contato@seusite.com>",
-      to: "ddchagas@gmail.com",
+      from: "Contato Portfólio <onboarding@resend.dev>", 
+      to: "byjdrk.27@gmail.com",
       subject: `Novo contato de ${firstName} ${lastName}`,
       text: `Email: ${email}\nMensagem: ${message}`,
     });
 
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (err) {
-    return new Response(JSON.stringify({ success: false, error: err.message }), { status: 500 });
+    console.error("Erro ao enviar e-mail:", err);
+    return new Response(
+      JSON.stringify({ success: false, error: err.message }),
+      { status: 500 }
+    );
   }
 }
