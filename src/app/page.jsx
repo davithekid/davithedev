@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import { Certificates } from "@/blocks/certificates";
 import Contact02Page from "@/blocks/contact";
 import { Feature16 } from "@/blocks/features";
@@ -8,6 +10,11 @@ import { Techs } from "@/blocks/techs";
 import Timeline from "@/blocks/timeline/timeline";
 import Navbar04Page from "@/components/navbar/navbar-04";
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export default function Home() {
   return (
     <>
@@ -17,34 +24,89 @@ export default function Home() {
         </header>
       </nav>
 
-      <section id="principal" className="mx-auto">
+      <motion.section
+        id="principal"
+        className="mx-auto"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        variants={fadeUp}
+      >
         <Hero07 />
-      </section>
+      </motion.section>
 
-      <section id="tech" className="mx-auto container">
+      <motion.section
+        id="tech"
+        className="mx-auto container"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        variants={fadeUp}
+      >
         <Techs />
-      </section>
+      </motion.section>
 
-      <section id="servicos" className="mx-auto  bg-violet-50 dark:bg-zinc-900">
+      <motion.section
+        id="servicos"
+        className="mx-auto bg-violet-50 dark:bg-zinc-900"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        variants={fadeUp}
+      >
         <Feature16 />
-      </section>
+      </motion.section>
 
-      <section  id="projetos" className="mx-auto container">
+      <motion.section
+        id="projetos"
+        className="mx-auto container"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        variants={fadeUp}
+      >
         <Feature72 />
-      </section>
+      </motion.section>
 
-      <section id="certificados" className="mx-auto container">
+      <motion.section
+        id="certificados"
+        className="mx-auto container"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        variants={fadeUp}
+      >
         <Certificates />
-      </section>
+      </motion.section>
 
-      <section id="timeline" className="mx-auto container">
+      <motion.section
+        id="timeline"
+        className="mx-auto container"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+        variants={fadeUp}
+      >
         <Timeline />
-      </section>
+      </motion.section>
 
-
-      <section id="contato" className="mx-auto container">
+      <motion.section
+        id="contato"
+        className="mx-auto container"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.6 }}
+        variants={fadeUp}
+      >
         <Contact02Page />
-      </section>
+      </motion.section>
 
       <footer>
         <Footer05Page />
