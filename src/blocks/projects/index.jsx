@@ -18,16 +18,6 @@ const Feature72 = ({
     features = [
         {
             id: 1,
-            title: "Barbearia Croods",
-            description: "Sistema de agendamento para uma barbearia real.",
-            dialog:
-                "Sistema com foco em agendamentos online, autenticação e controle de horários, utilizando APIs REST, Docker e interface moderna com Shadcn UI.",
-            image: "./croods.png",
-            link: "https://github.com/davithekid/croods",
-            tech: ["Next.Js", "Fastify", "Sequelize", "Docker", "Shadcn UI"],
-        },
-        {
-            id: 2,
             title: "Zelos",
             description:
                 "Sistema de chamados técnicos desenvolvido para o SENAI Armando Arruda Pereira.",
@@ -39,15 +29,25 @@ const Feature72 = ({
             tech: ["Next.Js", "Express", "Sequelize", "Docker", "Active Directory"],
         },
         {
-            id: 3,
+            id: 2,
             title: "Aqua",
-            description: "Sistema de gestão e monitoramento do consumo de água.",
+            description: "Sistema de gestão e monitoramento do consumo de água. (TCC SENAI)",
             dialog:
                 "Aplicação hospedada na AWS EC2, com backend em Fastify e dashboards analíticos para visualização de dados.",
             image:
                 "./aqua.png",
-            link: "https://github.com/davithekid/aqua",
+            link: "https://github.com/tcc-aqua/aqua",
             tech: ["Next.Js", "Fastify", "Sequelize", "Docker", "Shadcn UI", "AWS EC2"],
+        },
+        {
+            id: 3,
+            title: "Barbearia Croods",
+            description: "Sistema de agendamento para uma barbearia real.",
+            dialog:
+                "Sistema com foco em agendamentos online, autenticação e controle de horários, utilizando APIs REST, Docker e interface moderna com Shadcn UI.",
+            image: "./croods.png",
+            link: "https://github.com/davithekid/croods",
+            tech: ["Next.Js", "Fastify", "Sequelize", "Docker", "Shadcn UI"],
         },
         {
             id: 4,
@@ -70,6 +70,17 @@ const Feature72 = ({
                 "https://emaster.cloud/wp-content/uploads/sites/10/2023/07/amazon-ec2-aa.jpg",
             link: "https://github.com/davithekid/library-api",
             tech: ["Fastify", "Sequelize", "Docker", "AWS EC2"],
+        }, 
+        {
+            id: 6,
+            title: "Tam Artsy",
+            description: "Plataforma de Vendas de Produtos Artesanais.",
+            dialog:
+                "Feito para uma cliente do qual consiste em uma aplicação real, possuindo catálogos para a compra de produtos.",
+            image:
+                "./tamartsy.png",
+            link: "https://tamartsy.vercel.app/",
+            tech: ["NextJs", "Shadcn"],
         },
     ],
 }) => {

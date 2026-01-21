@@ -4,20 +4,20 @@ import { Building2, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Estudante de Desenvolvimento de Sistemas",
+    title: "Curso Técnico em Desenvolvimento de Sistemas",
     company: "SENAI Armando de Arruda Pereira",
-    period: "2024 - Presente",
+    period: "2024 - 2025",
     description:
-      "Atualmente estudando desenvolvimento de sistemas, com foco em Node.js, aprendendo sobre lógica de programação, banco de dados, e desenvolvimento web moderno.",
-    technologies: ["JavaScript", "Node.js", "PHP", "Next.js", "MySQL"],
+      "Desenvolvimento de sistemas, com foco em Node.js, aprendendo sobre lógica de programação, banco de dados, e desenvolvimento web moderno.",
+    technologies: ["JavaScript", "Node.js", "PHP", "Next.js", "MySQL", 'Docker', 'Linux'],
   },
   {
     title: "Estagiário de TI",
     company: "Grupo Braido",
     period: "2025 - 2025",
     description:
-      "Atuação com tarefas básicas de suporte técnico e infraestrutura, aprendendo sobre servidores, sistemas SaaS, e monitoramento de ambiente de TI.",
-    technologies: ["Prometheus", "SaaS", "Infraestrutura", "Servidores"],
+      "Atuação com tarefas básicas de suporte técnico, chamados e infraestrutura, aprendendo sobre servidores, sistemas SaaS, e monitoramento de ambiente de TI.",
+    technologies: ["Prometheus", "SaaS", "Infraestrutura", "Servidores", "TOTVS"],
   },
 ];
 
