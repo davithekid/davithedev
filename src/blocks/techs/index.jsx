@@ -16,7 +16,7 @@ const Techs = () => {
     title: "Front-End",
     description:
       "Crio interfaces limpas, responsivas e funcionais usando sistemas modernos de componentes, sempre com atenção à experiência do usuário.",
-    items: ["Next.js / React", "TailwindCSS", "Shadcn/UI"],
+    items: ["Next.js / React", "TailwindCSS", "Shadcn/UI", "SEO", "Acessibilidade"],
   },
   {
     icon: <Code className="h-6 w-6" />,
