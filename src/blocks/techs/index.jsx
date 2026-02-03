@@ -8,15 +8,15 @@ const Techs = () => {
     icon: <Cog className="h-6 w-6" />,
     title: "Back-End",
     description:
-      "Desenvolvo APIs e estruturas escaláveis com Node.js, buscando código limpo e boas práticas, ainda aprendendo e evoluindo a cada projeto.",
-    items: ["Node.js (Fastify / Express)", "Sequelize / Knex", "Spring Boot"],
+      "Desenvolvo APIs e estruturas escaláveis, buscando código limpo e boas práticas, em constante evolução a cada projeto.",
+    items: ["Node.js (Fastify / Express)", "PHP (Laravel)", "Java (Spring Boot)"],
   },
   {
     icon: <PenTool className="h-6 w-6" />,
     title: "Front-End",
     description:
       "Crio interfaces limpas, responsivas e funcionais usando sistemas modernos de componentes, sempre com atenção à experiência do usuário.",
-    items: ["Next.js / React", "TailwindCSS", "Shadcn/UI", "SEO", "Acessibilidade"],
+    items: ["Next.js / React", "Angular", "TailwindCSS", "SEO", "Acessibilidade"],
   },
   {
     icon: <Code className="h-6 w-6" />,
@@ -30,7 +30,7 @@ const Techs = () => {
     title: "DevOps & Infraestrutura",
     description:
       "Aprendendo a automatizar, implantar e escalar sistemas usando ferramentas modernas, sempre em evolução.",
-    items: ["Docker", "Linux", "AWS (EC2)", "Git"],
+    items: ["Docker", "Linux", "AWS (EC2)", "Git", "MySQL"],
   },
 ];
 
