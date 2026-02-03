@@ -31,8 +31,6 @@ export const NavMenu = (props) => (
         { href: "#contato", label: "Contato" },
       ].map((item) => (
         <NavigationMenuItem key={item.href}>
-          {/* REMOVIDO: legacyBehavior e passHref */}
-          {/* ADICIONADO: asChild no NavigationMenuLink para ele se fundir ao Link */}
           <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), "bg-transparent cursor-pointer")}>
             <Link href={item.href}>
               {item.label}

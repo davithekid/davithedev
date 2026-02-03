@@ -18,7 +18,7 @@ const Navbar04Page = () => {
           <div className="flex items-center gap-3">
             <div className="hidden lg:flex items-center gap-3">
               <a
-                href="./curriculo.pdf"
+                href="./curriculo-davi-chagas.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
