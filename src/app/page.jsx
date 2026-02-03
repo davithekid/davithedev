@@ -1,6 +1,5 @@
 'use client'
 import { motion } from "framer-motion";
-import { Certificates } from "@/blocks/certificates";
 import Contact02Page from "@/blocks/contact";
 import { Feature16 } from "@/blocks/features";
 import Footer05Page from "@/blocks/footer/footer";
@@ -9,6 +8,7 @@ import { Feature72 } from "@/blocks/projects";
 import { Techs } from "@/blocks/techs";
 import Timeline from "@/blocks/timeline/timeline";
 import Navbar04Page from "@/components/navbar/navbar-04";
+import { Certificates } from "@/blocks/certificates";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
