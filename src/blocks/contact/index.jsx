@@ -64,7 +64,7 @@ const Contact02Page = () => {
               <div>
                 <h3 className="font-semibold text-lg">Email</h3>
                 <Link className="text-primary font-medium" href="mailto:ddchagas@gmail.com">
-                  ddchagas@gmail.com
+                  ddchagas.d1@gmail.com
                 </Link>
               </div>
             </div>
