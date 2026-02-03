@@ -42,9 +42,9 @@ export default function Timeline() {
   return (
     <div className="max-w-3xl mx-auto py-12 md:py-20 px-6">
       <h2 className="text-3xl font-semibold tracking-tight md:text-4xl text-center mb-16">
-        <span className="text-muted-foreground font-light">&lt;</span>
-        <span className="text-primary px-2">Timeline</span>
-        <span className="text-muted-foreground font-light">&gt;</span>
+      <span className="text-muted-foreground">&lt;</span>
+            <span className="text-primary">Timeline</span>
+            <span className="text-muted-foreground">&gt;</span>
       </h2>
 
       <div className="relative ml-3 border-l-2 border-muted">
