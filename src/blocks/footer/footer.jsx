@@ -63,14 +63,12 @@ const Footer05Page = () => {
             {/* Copyright */}
             <span className="text-muted-foreground">
               &copy; {new Date().getFullYear()}{" "}
-              <Link href="/" target="_blank">
                 Davi Chagas
-              </Link>
               . Todos os direitos reservados.
             </span>
 
             <div className="flex items-center gap-5 text-muted-foreground">
-              <Link href="#" target="_blank">
+              <Link href="https://github.com/davithekid" target="_blank">
                 <GithubIcon className="h-5 w-5" />
               </Link>
             </div>
