@@ -9,7 +9,7 @@ const Techs = () => {
     title: "Back-End",
     description:
       "Desenvolvo APIs e estruturas escaláveis, buscando código limpo e boas práticas, em constante evolução a cada projeto.",
-    items: ["Node.js (Fastify / Express)", "PHP (Laravel)", "Java (Spring Boot)"],
+    items: ["Node.js", "Laravel", "Spring Boot", "Nginx", "Apache"],
   },
   {
     icon: <PenTool className="h-6 w-6" />,

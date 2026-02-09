@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { MailIcon, PhoneIcon } from "lucide-react";
+import { MailIcon, PhoneIcon, MapPinIcon } from "lucide-react";
 import Link from "next/link";
 import { toast } from "sonner";
 
@@ -80,9 +80,21 @@ const Contact02Page = () => {
                 </Link>
               </div>
             </div>
+
+            <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center w-12 h-12 bg-primary/10 text-primary rounded-full">
+                <MapPinIcon />
+              </div>
+              <div>
+                <h3 className="font-semibold text-lg">Disponilidade</h3>
+                <Link className="text-primary font-medium" href="tel:+5511942766704">
+                  Remoto (todo Brasil) ou presencial em São Paulo/SP
+                </Link>
+              </div>
+            </div>
           </div>
 
-          <Card className="bg-accent rounded-2xl shadow-md">
+          <Card className="rounded-2xl shadow-md">
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                 <div className="grid md:grid-cols-2 gap-4">

@@ -11,31 +11,31 @@ import Link from "next/link";
 const footerLinks = [
   {
     title: "Inicio",
-    href: "#",
+    href: "#principal",
   },
   {
     title: "Tecnologias",
-    href: "#",
+    href: "#tech",
   },
   {
     title: "Serviços",
-    href: "#",
+    href: "#servicos",
   },
   {
     title: "Projetos",
-    href: "#",
+    href: "#projetos",
   },
   {
     title: "Certificados",
-    href: "#",
+    href: "#certifados",
   },
   {
     title: "Timeline",
-    href: "#",
+    href: "#timeline",
   },
   {
     title: "Contato",
-    href: "#",
+    href: "#contato",
   },
 ];
 

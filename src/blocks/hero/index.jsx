@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, ArrowDown, ArrowUpRight, CirclePlay } from "lucide-react";
+import { Github, Linkedin, PhoneIcon, ArrowDown, ArrowUpRight, CirclePlay } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedGridPattern from "../../components/ui/animated-grid-pattern";
 import Link from "next/link";
@@ -84,7 +84,7 @@ export default function Hero() {
                 className="border-violet-700 hover:bg-violet-500/10 rounded-full px-8 py-6 text-base font-mono shadow-none"
               >
                 <Link href='#contato'>
-                  <CirclePlay className="h-5 w-5 mr-2" /> Contato
+                  <PhoneIcon className="h-5 w-5 mr-2" /> Contato
                 </Link>
               </Button>
             </motion.div>
