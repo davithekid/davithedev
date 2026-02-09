@@ -37,7 +37,7 @@ const Certificates = ({
       id: 4,
       title: "Microsoft AI-900 - Cloud AI Services",
       description: "Microsoft",
-      image: "https://imgs.search.brave.com/vCNsUygTv0kEJzDmghelAozKu-0TsjSG6EgZveKsRMk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9maWxl/cy50ZWNub2Jsb2cu/bmV0L3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIzLzAxL21pY3Jv/c29mdC0zNjUtY2Fw/YS03LTM0MHgxOTEu/cG5n",
+      image: "https://imgs.search.brave.com/1X0RnvItL9OOj86Uqe1XwxMhkQya-7fXziLTObmzIIw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXR0/aW5lZ3JvdXAuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIz/LzA0L2ludGVsaWdl/bmNpYS1hcnRpZmlj/aWFsLWxhdHRpbmUt/Z3JvdXAuanBn",
       date: "29/10/2024",
     },
   ],
