@@ -1,80 +1,82 @@
 "use client";
 
-import { Code, Cog, PenTool, ServerCog } from "lucide-react";
+import { Cog, PenTool, ServerCog, CheckCircle2 } from "lucide-react";
 
-const Techs = () => {
-   const services = [
+const services = [
   {
     icon: <Cog className="h-6 w-6" />,
     title: "Back-End",
     description:
-      "Desenvolvo APIs e estruturas escaláveis, buscando código limpo e boas práticas, em constante evolução a cada projeto.",
-    items: ["Spring Boot","Node.js", "Laravel", "Nginx", "Apache"],
+      "Desenvolvimento de APIs REST robustas com foco em regras de negócio complexas, persistência de dados e arquitetura limpa.",
+    items: ["Spring Boot", "JPA / Hibernate", "Node.js", "SQL Databases"],
+    color: "from-blue-500/20",
   },
   {
     icon: <PenTool className="h-6 w-6" />,
     title: "Front-End",
     description:
-      "Crio interfaces limpas, responsivas e funcionais usando sistemas modernos de componentes, sempre com atenção à experiência do usuário.",
-    items: ["Next.js / React", "TailwindCSS", "SEO", "Acessibilidade"],
-  },
-  {
-    icon: <Code className="h-6 w-6" />,
-    title: "Integração Full Stack",
-    description:
-      "Conecto front e back de forma prática, integrando APIs, autenticação e buscando desempenho eficiente em cada projeto.",
-    items: ["APIs RESTful", "JWT Auth", "React Hooks"],
+      "Criação de interfaces responsivas e performáticas, focadas na experiência do usuário e integração fluída com APIs.",
+    items: ["React.js", "Next.js", "Tailwind CSS", "JavaScript"],
+    color: "from-purple-500/20",
   },
   {
     icon: <ServerCog className="h-6 w-6" />,
-    title: "DevOps & Infraestrutura",
+    title: "DevOps & Infra",
     description:
-      "Aprendendo a automatizar, implantar e escalar sistemas usando ferramentas modernas, sempre em evolução.",
-    items: ["Docker", "Linux", "AWS (EC2)", "Git", "MySQL"],
+      "Gerenciamento de deploys, containerização de aplicações e configuração de ambientes em nuvem escaláveis.",
+    items: ["Docker", "AWS (EC2/S3)", "CI/CD", "Linux & Git"],
+    color: "from-orange-500/20",
   },
 ];
 
-    return (
-        <section className="py-32">
-            <div className="container">
-                <div className="mx-auto max-w-6xl space-y-12">
-                    <div className="space-y-4 text-center">
-                        <h2 className="text-3xl font-semibold tracking-tight md:text-4xl text-center">
-                            <span className="text-muted-foreground">&lt;</span>
-                            <span className="text-primary">Minha Stack</span>
-                            <span className="text-muted-foreground">&gt;</span>
-                        </h2>
-    
-                    </div>
+const TechCard = ({ service }) => (
+  <article className="group relative overflow-hidden rounded-2xl border border-white/10 bg-card p-8 transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+    <div className={`absolute -right-10 -top-10 h-32 w-32 bg-gradient-to-br to-transparent blur-3xl transition-opacity opacity-0 group-hover:opacity-100`} />
 
-                    <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                        {services.map((service, index) => (
-                            <div
-                                key={index}
-                                className="border-primary/50     space-y-6 rounded-2xl border p-8 transition-all hover:shadow-lg hover:-translate-y-1 mx-3  lg:mx-0"
-                            >
-                                <div className="flex items-center gap-4">
-                                    <div className="bg-muted rounded-full p-3 text-primary">{service.icon}</div>
-                                    <h3 className="text-xl font-semibold">{service.title}</h3>
-                                </div>
-                                <p className="text-muted-foreground leading-relaxed">
-                                    {service.description}
-                                </p>
-                                <div className="space-y-2">
-                                    {service.items.map((item, itemIndex) => (
-                                        <div key={itemIndex} className="flex items-center gap-2">
-                                            <div className="bg-foreground h-1.5 w-1.5 rounded-full" />
-                                            <span className="text-sm font-medium">{item}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+    <div className="relative z-10 space-y-6">
+      <div className="flex items-center gap-4">
+        <div className="inline-flex rounded-xl bg-primary/10 p-3 text-primary ring-1 ring-primary/20 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+          {service.icon}
+        </div>
+        <h3 className="text-xl font-bold tracking-tight">{service.title}</h3>
+      </div>
+
+      <p className="text-sm leading-relaxed text-muted-foreground">
+        {service.description}
+      </p>
+
+      <ul className="grid grid-cols-2 gap-y-3">
+        {service.items.map((item) => (
+          <li key={item} className="flex items-center gap-2">
+            <CheckCircle2 className="h-4 w-4 text-primary opacity-70" />
+            <span className="text-xs font-semibold uppercase tracking-wider text-foreground/80">{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </article>
+);
+
+const Techs = () => {
+  return (
+    <section className="py-24 lg:py-32">
+      <div className="container px-4 mx-auto">
+        <div className="flex flex-col items-center space-y-4 text-center mb-16">
+          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl text-center mb-16">
+            <span className="text-muted-foreground">&lt;</span>
+            <span className="text-primary">Minha Stack</span>
+            <span className="text-muted-foreground">&gt;</span>
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {services.map((service, index) => (
+            <TechCard key={index} service={service} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export { Techs };
