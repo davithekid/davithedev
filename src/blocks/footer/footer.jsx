@@ -1,10 +1,8 @@
 import { Logo } from "@/components/navbar/logo";
 import { Separator } from "@/components/ui/separator";
 import {
-  DribbbleIcon,
   GithubIcon,
-  TwitchIcon,
-  TwitterIcon,
+  LinkedinIcon,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -42,7 +40,7 @@ const Footer05Page = () => {
             <ul className="mt-6 flex items-center gap-4 flex-wrap mx-2  lg:mx-0">
               {footerLinks.map(({ title, href }) => (
                 <li key={title}>
-                  <Link href={href} className="text-muted-foreground hover:text-foreground">
+                  <Link href={href} className="text-muted-foreground hover:text-primary duration-150">
                     {title}
                   </Link>
                 </li>
@@ -59,8 +57,11 @@ const Footer05Page = () => {
             </span>
 
             <div className="flex items-center gap-5 text-muted-foreground">
-              <Link href="https://github.com/davithekid" target="_blank">
+              <Link href="https://github.com/davithekid" className={'hover:text-primary duration-100'} target="_blank">
                 <GithubIcon className="h-5 w-5" />
+              </Link>
+               <Link href="https://www.linkedin.com/in/chagas-davi/" className={'hover:text-primary duration-100'} target="_blank">
+                <LinkedinIcon className="h-5 w-5" />
               </Link>
             </div>
           </div>
