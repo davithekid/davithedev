@@ -24,7 +24,6 @@ export const NavMenu = (props) => (
       {[
         { href: "#tech", label: "Tecnologias" },
         { href: "#projetos", label: "Projetos" },
-        { href: "#certificados", label: "Certificados" },
         { href: "#timeline", label: "Timeline" },
         { href: "#contato", label: "Contato" },
       ].map((item) => (
