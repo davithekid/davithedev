@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import Contact02Page from "@/blocks/contact";
 import { Feature16 } from "@/blocks/features";
 import Footer05Page from "@/blocks/footer/footer";
-import Hero07 from "@/blocks/hero";
 import { Feature72 } from "@/blocks/projects";
 import { Techs } from "@/blocks/techs";
 import Timeline from "@/blocks/timeline/timeline";
 import Navbar04Page from "@/components/navbar/navbar-04";
-import { Certificates } from "@/blocks/certificates";
+import MainHero from "@/blocks/hero";
+import { Cta10 } from "@/blocks/cta";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -33,7 +33,7 @@ export default function Home() {
         transition={{ duration: 0.6 }}
         variants={fadeUp}
       >
-        <Hero07 />
+        <MainHero />
       </motion.section>
 
       <motion.section
@@ -73,18 +73,6 @@ export default function Home() {
       </motion.section>
 
       <motion.section
-        id="certificados"
-        className="mx-auto container"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-        variants={fadeUp}
-      >
-        <Certificates />
-      </motion.section>
-
-      <motion.section
         id="timeline"
         className="mx-auto container"
         initial="hidden"
@@ -107,6 +95,8 @@ export default function Home() {
       >
         <Contact02Page />
       </motion.section>
+
+      <Cta10/>
 
       <footer>
         <Footer05Page />

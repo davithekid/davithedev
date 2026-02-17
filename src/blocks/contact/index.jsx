@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { MailIcon, PhoneIcon, MapPinIcon } from "lucide-react";
 import Link from "next/link";
 import { toast } from "sonner";
+import Image from "next/image";
 
 const Contact02Page = () => {
   const [loading, setLoading] = useState(false);
@@ -17,8 +18,7 @@ const Contact02Page = () => {
     setLoading(true);
 
     const formData = {
-      firstName: e.target.firstName.value,
-      lastName: e.target.lastName.value,
+      firstName: e.target.firstName.value, 
       email: e.target.email.value,
       message: e.target.message.value,
     };
@@ -54,72 +54,82 @@ const Contact02Page = () => {
         <p className="text-center text-gray-400 mt-3 mb-10">
           Fique à vontade para enviar uma mensagem ou entrar em contato via email ou telefone.
         </p>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div className="flex flex-col gap-8 lg:py-30">
-            <div className="flex items-center gap-4">
-              <div className="flex items-center justify-center w-12 h-12 bg-primary/10 text-primary rounded-full">
-                <MailIcon />
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg">Email</h3>
-                <Link className="text-primary font-medium" href="mailto:ddchagas@gmail.com">
-                  ddchagas.d1@gmail.com
-                </Link>
-              </div>
+          <div className="flex flex-col gap-8">
+            <div className="relative w-full flex justify-center lg:justify-start">
+              <Image
+                src="/illustration.svg"
+                alt="Contato"
+                width={400}
+                height={300}
+                priority
+                className="opacity-90 dark:brightness-90"
+              />
             </div>
 
-            <div className="flex items-center gap-4">
-              <div className="flex items-center justify-center w-12 h-12 bg-primary/10 text-primary rounded-full">
-                <PhoneIcon />
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 group">
+                <div className="flex items-center justify-center w-12 h-12 bg-violet-500/10 text-violet-500 rounded-full group-hover:bg-violet-500 group-hover:text-white transition-colors">
+                  <MailIcon className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg">Email</h3>
+                  <Link className="text-muted-foreground hover:text-violet-500 transition-colors" href="mailto:ddchagas.d1@gmail.com">
+                    ddchagas.d1@gmail.com
+                  </Link>
+                </div>
               </div>
-              <div>
-                <h3 className="font-semibold text-lg">Telefone</h3>
-                <Link className="text-primary font-medium" href="tel:+5511942766704">
-                  +55 (11) 94276-6704
-                </Link>
-              </div>
-            </div>
 
-            <div className="flex items-center gap-4">
-              <div className="flex items-center justify-center w-12 h-12 bg-primary/10 text-primary rounded-full">
-                <MapPinIcon />
+              <div className="flex items-center gap-4 group">
+                <div className="flex items-center justify-center w-12 h-12 bg-violet-500/10 text-violet-500 rounded-full group-hover:bg-violet-500 group-hover:text-white transition-colors">
+                  <PhoneIcon className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg">Telefone</h3>
+                  <Link className="text-muted-foreground hover:text-violet-500 transition-colors" href="tel:+5511942766704">
+                    +55 (11) 94276-6704
+                  </Link>
+                </div>
               </div>
-              <div>
-                <h3 className="font-semibold text-lg">Disponilidade</h3>
-                <Link className="text-primary font-medium" href="tel:+5511942766704">
-                  Remoto (todo Brasil) ou presencial em São Paulo/SP
-                </Link>
+
+              <div className="flex items-center gap-4 group">
+                <div className="flex items-center justify-center w-12 h-12 bg-violet-500/10 text-violet-500 rounded-full group-hover:bg-violet-500 group-hover:text-white transition-colors">
+                  <MapPinIcon className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg">Disponibilidade</h3>
+                  <p className="text-muted-foreground">
+                    Remoto ou presencial em São Paulo/SP
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <Card className="rounded-2xl shadow-md">
+          <Card className="rounded-3xl border-violet-500/10 bg-card/50 backdrop-blur-sm shadow-xl">
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <Label htmlFor="firstName">Nome</Label>
-                    <Input id="firstName" name="firstName" placeholder="Seu nome" className="mt-2 bg-white shadow-sm" required />
+                <div className="gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="firstName">Nome e Empresa</Label>
+                    <Input id="firstName" name="firstName" placeholder="Seu nome e empresa" className="bg-background/50 border-violet-500/10" required />
                   </div>
-                  <div>
-                    <Label htmlFor="lastName">Sobrenome</Label>
-                    <Input id="lastName" name="lastName" placeholder="Seu sobrenome" className="mt-2 bg-white shadow-sm" required />
-                  </div>
+
                 </div>
 
-                <div>
+                <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" name="email" type="email" placeholder="Seu email" className="mt-2 bg-white shadow-sm" required />
+                  <Input id="email" name="email" type="email" placeholder="seu@email.com" className="bg-background/50 border-violet-500/10" required />
                 </div>
 
-                <div>
+                <div className="space-y-2">
                   <Label htmlFor="message">Mensagem</Label>
-                  <Textarea id="message" name="message" placeholder="Sua mensagem" rows={5} className="mt-2 bg-white shadow-sm" required />
+                  <Textarea id="message" name="message" placeholder="Como posso ajudar?" rows={5} className="bg-background/50 border-violet-500/10 resize-none" required />
                 </div>
 
-                <Button type="submit" className="mt-4 w-full" size="lg" disabled={loading}>
-                  {loading ? "Enviando..." : "Enviar"}
+                <Button type="submit" className="w-full bg-violet-600 hover:bg-violet-700 text-white py-6 text-lg rounded-xl transition-all" disabled={loading}>
+                  {loading ? "Enviando..." : "Enviar Mensagem"}
                 </Button>
               </form>
             </CardContent>

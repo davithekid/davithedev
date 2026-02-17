@@ -22,9 +22,7 @@ export const NavMenu = (props) => (
       className="gap-3 space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start"
     >
       {[
-        { href: "#principal", label: "Início" },
         { href: "#tech", label: "Tecnologias" },
-        { href: "#servicos", label: "Serviços" },
         { href: "#projetos", label: "Projetos" },
         { href: "#certificados", label: "Certificados" },
         { href: "#timeline", label: "Timeline" },

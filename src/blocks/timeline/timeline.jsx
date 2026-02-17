@@ -10,8 +10,8 @@ import {
 
 const experiences = [
   {
-    title: "Aprendiz de TI",
-    company: "Grupo Braido",
+    title: "Aprendiz de TI – Suporte e Sustentação de Sistemas",
+    company: "Indústria Agroquímica Braido",
     period: "2025 - 2025",
     description:
       "Suporte técnico especializado e gestão de infraestrutura. Atuação direta no monitoramento de ambientes críticos e administração de sistemas SaaS, garantindo a alta disponibilidade dos serviços.",
