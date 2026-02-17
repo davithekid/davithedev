@@ -29,8 +29,8 @@ const projects = [
   {
     id: 2,
     title: "Zelos",
-    description: "Sistema de chamados técnicos desenvolvido para o SENAI Armando Arruda Pereira.",
-    dialog: "Plataforma integrada ao Active Directory, construída com Express e Sequelize, utilizando Docker para padronização do ambiente.",
+    description: "Sistema de chamados e controle de patrimônio (Hackathon)",
+    dialog: "Desenvolvimento de API REST em Node.js (Express) seguindo arquitetura MVC e separação de responsabilidades.",
     image: "/zelos.png",
     link: "https://github.com/davithekid/zelos",
     tech: ["Next.Js", "Express", "Sequelize", "Docker", "Active Directory"],
